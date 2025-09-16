@@ -128,7 +128,7 @@ input.addEventListener("keydown", async function (e) {
       let text = commands[cmd].trim(); // remove extra trailing newlines
       typeText(text + "\n\n"); // append a single line break after every command
     } else {
-      typeText("Unknown command. Type 'help' for options.\n");
+      typeText("Unknown command. Type 'help' for options.\n\n");
     }
   }
 
@@ -192,3 +192,4 @@ window.onload = async () => {
   await loadCommands();
   typeIntro();
 };
+
